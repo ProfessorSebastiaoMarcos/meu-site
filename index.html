@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site no GitHub</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja Natural</title>
+  <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
+  <header>
+    <h1>Loja de Produtos Naturais</h1>
+  </header>
 
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-    </header>
+  <main>
+    <section class="filtros">
+      <label for="categoria">Filtrar por categoria:</label>
+      <select id="categoria">
+        <option value="tudo">Todos</option>
+        <option value="alimento">Alimentos</option>
+        <option value="cosmetico">Cosméticos</option>
+      </select>
+    </section>
 
-    <main>
-        <p>Este site está hospedado no GitHub Pages!</p>
-        <button onclick="mensagem()">Clique Aqui</button>
-    </main>
+    <section id="produtos" class="lista-produtos"></section>
 
-    <footer>
-        <p>&copy; 2025 - Meu Site</p>
-    </footer>
+    <section id="resumo">
+      <p id="total">Total: R$ 0,00</p>
+    </section>
+  </main>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
